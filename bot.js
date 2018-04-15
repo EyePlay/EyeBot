@@ -1,15 +1,15 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const bot = new Discord.Client();
 
-client.on('ready', () => {
-    console.log('I am ready!');
-});
+bot.on('message', (message) => {
 
-client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
-  	}
-});
+    if(message.content == 'who is fake') {
+        message.reply('you are fake');
+        //message.channel.sendMessage('pong')
+    }
 
-// THIS  MUST  BE  THIS  WAY
+    else if(message.content == 'ok') {
+        message.reply('actually, it is not ok');
+    }
+})
 client.login(process.env.BOT_TOKEN);
