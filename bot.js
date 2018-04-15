@@ -10,7 +10,7 @@ client.on('message', message => {
     	message.reply('pong');
   	}
     else if(message.content == 'who is fake') {
-        message.channel.sendMessage('@Astronaut Food#4169 is fake');
+        message.channel.sendMessage('@264952723030409217 is fake');
     }
 });
 
