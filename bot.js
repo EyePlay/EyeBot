@@ -10,7 +10,7 @@ client.on('message', message => {
     	message.reply('pong');
   	}
      else if(message.content == 'who is fake') {
-        bot.sendMessage({to: 432689272106123277, message: `${user.mention(@264952723030409217)} is fake`});
+        message.channel.sendMessage('you are fake')
     }
 });
 
