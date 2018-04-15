@@ -9,6 +9,9 @@ client.on('message', message => {
     if (message.content == 'ping') {
     	message.reply('pong');
   	}
+    else if(message.content == 'who is fake') {
+        message.channel.sendMessage('@Astronaut Food#4169 is fake');
+    }
 });
 
 client.login(process.env.BOT_TOKEN);
